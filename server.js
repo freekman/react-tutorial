@@ -18,6 +18,15 @@ var app = express();
 
 var COMMENTS_FILE = path.join(__dirname, 'comments.json');
 
+var SystemJS = require('systemjs');
+
+// loads './app.js' from the current directory
+SystemJS.import('public/').then(function(m) {
+  console.log(m);
+});
+
+
+
 app.set('port', (process.env.PORT || 3000));
 
 app.use('/', express.static(path.join(__dirname, 'public')));
