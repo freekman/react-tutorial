@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { addTodo } from '../actions/actions.js'
 
-let AddTodo = ({getState, addTodo})=> {
+let AddTodo = ({addTodo})=> {
   let input;
 
   return (
