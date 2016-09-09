@@ -6,12 +6,17 @@ const Footer = () => (
   <p>
     Show:
     {" "}
-    <FilterLink filter="show_all">All</FilterLink>
+    <FilterLink filter="all">
+      All
+    </FilterLink>
     {", "}
-    <FilterLink filter="show_active">Active</FilterLink>
+    <FilterLink filter="active">
+      Active
+    </FilterLink>
     {", "}
-    <FilterLink filter="show_completed">Completed</FilterLink>
+    <FilterLink filter="completed">
+      Completed
+    </FilterLink>
   </p>
 );
-
 export default Footer

@@ -18,5 +18,8 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.es6']
+  },
+  devServer: {
+    historyApiFallback: true,
   }
 };
